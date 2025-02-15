@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive Pricing Component</title>
+    <link rel="stylesheet" href="/assets/styles/reset.css" />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Simple, traffic-based pricing</h1>
+      <p class="header-paragraph">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="card-layout top">
+            <p class="card-pageviews" id="pageviews">100k pageviews</p>
+            <div class="card-range-container">
+              <input
+                type="range"
+                id="user-range"
+                class="card-range"
+                min="0"
+                max="4"
+                step="1"
+                value="2"
+              />
+              <div class="card-range-progress"></div>
+            </div>
+            <div class="card-plan">
+              <span class="plan-price">$16.00 </span>
+              <span class="plan-type">/ month</span>
+            </div>
+            <div class="card-pricing-type">
+              <p>Monthly Billing</p>
+              <label class="card-pricing-toggle">
+                <input type="checkbox" id="type-toggle" />
+                <span class="slider"></span>
+              </label>
+              <p>Yearly Billing</p>
+              <div class="card-pricing-discount">
+                <p>-25%</p>
+                <p class="pricing-discount-text">discount</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-line"></div>
+          <div class="card-bottom bottom">
+            <div class="bottom-stats-container">
+              <div class="bottom-stats">
+                <img src="/assets/images/icon-check.svg" alt="" />
+                <p>Unlimited websites</p>
+              </div>
+              <div class="bottom-stats">
+                <img src="/assets/images/icon-check.svg" alt="" />
+                <p>100% data ownership</p>
+              </div>
+              <div class="bottom-stats">
+                <img src="/assets/images/icon-check.svg" alt="" />
+                <p>Email reports</p>
+              </div>
+            </div>
+            <button class="bottom-stats-btn">Start my trial</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/assets/scripts/script.js"></script>
+  </body>
+</html>
