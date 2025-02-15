@@ -25,7 +25,7 @@
 }
 
 body {
-  background-image: url("./images/bg-pattern.svg");
+  background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat;
 
   /* background-color: var(--bg-body); */
@@ -46,7 +46,7 @@ header {
   flex-flow: column;
   margin-inline: auto;
 
-  background-image: url("assets/images/pattern-circles.svg");
+  background-image: url("/assets/images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 70%;
